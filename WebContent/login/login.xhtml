@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:ui="http://java.sun.com/jsf/facelets" 
+				xmlns:h="http://java.sun.com/jsf/html"  
+ 				xmlns:p="http://primefaces.org/ui"
+ 				xmlns:f="http://java.sun.com/jsf/core"
+ 				template="/template/template1.xhtml">
+<ui:define name="main-body">				
+	<h:form >  
+        <p:panel id="panel" header="Nirmal Login" style="margin-bottom:10px;"  >  
+	        <p:messages id="messages"/>  
+	        <h:panelGrid columns="3">  
+	            <h:outputLabel for="firstname" value="Email-Id: *" />  
+	            <p:inputText id="firstname"  label="Firstname">  
+	                <f:validateLength minimum="2" />  
+	            </p:inputText>  
+	            <p:message for="firstname" />  
+	              
+	            <h:outputLabel for="surname" value="Password: *" />  
+	            <p:password id="surname"  label="Surname"/>  
+	        </h:panelGrid>  
+        </p:panel>   
+	</h:form>
+</ui:define>			
+</ui:composition>
