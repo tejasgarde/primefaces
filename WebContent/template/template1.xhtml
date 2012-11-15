@@ -8,13 +8,21 @@
     xmlns:ui="http://java.sun.com/jsf/facelets">  
   
 <h:head>  
-  
+  <link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/default.css" />
 </h:head>  
       
 <h:body>  
 <p:layout fullPage="true">  
-      <p:layoutUnit position="north" size="100" header="Nirmal Savangadi" resizable="false" closable="false" collapsible="false">  
-        <h:outputText value="Nirmal Essentials" />  
+      <p:layoutUnit position="north" size="125" header="Nirmal Savangadi" resizable="false" closable="false" collapsible="false">  
+      
+        <div id="menu" class="ui-widget">
+                <ul id="main" >
+                    <li class="current_page_item" ><a href="#" >Home</a></li>
+                    <li ><a href="#" >Abiut Us</a></li>
+                    <li ><a href="#" >Sign Up</a></li>
+                    <li class="current_page_item" ><a href="#">Login</a></li>
+                </ul>
+       </div>
       </p:layoutUnit>
       <p:layoutUnit position="west" size="200" header="Side Bar" resizable="false" closable="false" collapsible="false">  
       </p:layoutUnit>
