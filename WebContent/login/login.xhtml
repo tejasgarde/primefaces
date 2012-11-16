@@ -6,7 +6,7 @@
  				template="/template/template1.xhtml">
 <ui:define name="main-body">				
 	<h:form >  
-        <p:panel id="panel" header="Nirmal Login" style="margin-bottom:10px;"  >  
+        <p:panel id="panel" header="Nirmal Login" style="margin-bottom:10px;width: 30%;position:absolute;height:30%;"  >  
 	        <p:messages id="messages"/>  
 	        <h:panelGrid columns="3">  
 	            <h:outputLabel for="firstname" value="Email-Id: *" />  
@@ -16,9 +16,11 @@
 	            <p:message for="firstname" />  
 	              
 	            <h:outputLabel for="surname" value="Password: *" />  
-	            <p:password id="surname"  label="Surname"/>  
-	        </h:panelGrid>  
-        </p:panel>   
+	            <p:password id="surname"  label="Surname"/><br/>
+	    	</h:panelGrid>
+	    	<p:commandButton value="Login" />
+	    	<p:commandButton value="Clear" />  
+        </p:panel>    
 	</h:form>
 </ui:define>			
 </ui:composition>
